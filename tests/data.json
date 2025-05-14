@@ -1,0 +1,12 @@
+{
+  "example_endpoint_happy_path": [
+    {
+      "example": {
+        "message": "Bxdo"
+      },
+      "expected": {
+        "message": "Hi Bxdo"
+      },
+    "test_case_id" :  "EXAMPLE_ENDPOINT_1-test_example_message"}
+  ]
+}
