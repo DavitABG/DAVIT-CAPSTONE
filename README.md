@@ -9,6 +9,11 @@ Install main dependencies
 poetry install
 ```
 
+Create `.env` file in `src` and write the `SQLite` database path in it as follows:
+```
+DB_URL={URL}
+```
+
 ## Running API
 
 ### For running project with uvicorn
