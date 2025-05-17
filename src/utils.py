@@ -1,8 +1,3 @@
-"""
---------------------------------------------
-In this file implemented the helper function
---------------------------------------------
-"""
 import importlib
 import json
 import pickle

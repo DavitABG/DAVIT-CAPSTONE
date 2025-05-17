@@ -1,10 +1,7 @@
-"""
-Here stored some global variables
-"""
 from logging import getLogger, DEBUG, basicConfig
 from pathlib import Path
 
-PROJECT_NAME = "fastapi-project"
+PROJECT_NAME = "Davit-Capstone"
 
 basicConfig()
 

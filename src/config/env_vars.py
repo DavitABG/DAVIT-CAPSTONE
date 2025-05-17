@@ -1,7 +1,3 @@
-"""
-Environment Variables
-"""
-
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 from src.globals import PACKAGE_ROOT
@@ -17,3 +13,4 @@ class EnvironmentVariables(BaseSettings):
 
 
 ENV_VARS = EnvironmentVariables()
+DATABASE_URL = "sqlite:///" + ENV_VARS.DB_URL

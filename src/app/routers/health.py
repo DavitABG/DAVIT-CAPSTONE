@@ -1,7 +1,3 @@
-"""
-Endpoints for checking API health and connections.
-"""
-
 from fastapi import APIRouter, Response, status
 
 # Instantiate router object
