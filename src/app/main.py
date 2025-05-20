@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 from src.app.middlewares import ExceptionHandlerMiddleware
-from src.app.routers import pareto, health, customers, products, sales
+from src.app.routers import pareto, health, customers, products, sales, preview
 from src.config import APP_SETTINGS
 
 # Instantiate the actions with documentation settings
@@ -16,3 +16,4 @@ app.include_router(customers.router)
 app.include_router(products.router)
 app.include_router(sales.router)
 app.include_router(health.router)
+app.include_router(preview.router)
