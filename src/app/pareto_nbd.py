@@ -1,7 +1,7 @@
 from datetime import datetime
 
 import pandas as pd
-from lifetimes import BetaGeoFitter, GammaGammaFitter
+from lifetimes import BetaGeoFitter, GammaGammaFitter, ParetoNBDFitter
 from lifetimes.utils import summary_data_from_transaction_data
 from sqlalchemy.orm import Session
 
@@ -10,7 +10,7 @@ from src.models import Transaction, Product
 
 class PNBDEngine:
     def __init__(self, penalizer_coef: float = 0.5):
-        self.pnbd = BetaGeoFitter(penalizer_coef=penalizer_coef)
+        self.pnbd = ParetoNBDFitter(penalizer_coef=penalizer_coef)
         self.gg = GammaGammaFitter(penalizer_coef=penalizer_coef)
         self.fitted = False
 
